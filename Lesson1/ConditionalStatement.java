@@ -15,28 +15,28 @@ char firstNameLetter = 'P';
 
 
 if(age > 20) {
-    System.out.println("Вы взрослый человек");
+    System.out.println("You are adult");
 }
 
 if(sex=='m') {
-    System.out.println("Вы - мужчина");
+    System.out.println("You are man");
 
 if(sex=='f') {
-    System.out.println("Вы - женщина");
+    System.out.println("You are woman");
 }
 
 if(height < 1.80) {
-    System.out.println("Вы - невысокий");
+    System.out.println("You are short");
 }  else {
-    System.out.println("Вы - высокий");
+    System.out.println("You are tall");
 }
 
-if (firstNameLetter == ‘М’) {
-   System.out.println("Ващш имя начинается с буквы ‘М’");
-} else if (firstNameLetter == ‘И’) {
-     System.out.println("Ващш имя начинается с буквы ‘М’");
+if (firstNameLetter == 'M') {
+   System.out.println("Your name starts with letter 'M'");
+} else if (firstNameLetter == 'I') {
+     System.out.println("Your name starts with letter 'I'");
 } else {
-     System.out.println("Ващш имя начинается с другой буквы");
+     System.out.println("Your name starts with another letter");
 } 
 
 
@@ -44,5 +44,7 @@ if (firstNameLetter == ‘М’) {
 }
 
 
+
+}
 
 }
