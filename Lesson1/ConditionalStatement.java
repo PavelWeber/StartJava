@@ -3,25 +3,24 @@ public class ConditionalStatement {
 	public static void main (String[] args) {
 		int age = 33;
 		boolean isMan = true;
-		boolean isWoman = true;
 		float height = 1.83f;
 		char firstNameLetter = 'P';
 
-		if(age > 20){
+		if(age > 20) {
 		    System.out.println("You are adult");
 		}
 
 		if(isMan) {
 		    System.out.println("You are man");
-	    }
+  	    }
 
-		if(isWoman) {
+		if(!isMan) {
 		    System.out.println("You are woman");
 		}
 
 		if(height < 1.80) {
 		    System.out.println("You are short");
-		}  else {
+		} else {
 		    System.out.println("You are tall");
 		}
 
@@ -32,9 +31,5 @@ public class ConditionalStatement {
 		} else {
 		     System.out.println("Your name starts with another letter");
 		} 
-
 	}
 }
-
-
-	
