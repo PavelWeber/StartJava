@@ -4,13 +4,13 @@ public class Cycle{
 		for(int i=0; i<=20; i++) {
 			System.out.println(i);
 		}
-	//Задание 2
+//Задание 2
 		int m =6;
 		while (m>=-6){
 			System.out.println(m);
 			m=m-2;
 		}
-	//Задание 3
+//Задание 3
 		int n = 10;
 		int result=10;
 		do {
