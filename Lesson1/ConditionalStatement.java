@@ -1,8 +1,9 @@
 public class ConditionalStatement {
 	
-	public static void main (String[] args){
+	public static void main (String[] args) {
 		int age = 33;
-		char sex = 'm';
+		boolean isMan = true;
+		boolean isWoman = true;
 		float height = 1.83f;
 		char firstNameLetter = 'P';
 
@@ -10,10 +11,11 @@ public class ConditionalStatement {
 		    System.out.println("You are adult");
 		}
 
-		if(sex=='m') {
+		if(isMan) {
 		    System.out.println("You are man");
+	    }
 
-		if(sex=='f') {
+		if(isWoman) {
 		    System.out.println("You are woman");
 		}
 
@@ -23,16 +25,16 @@ public class ConditionalStatement {
 		    System.out.println("You are tall");
 		}
 
-		if (firstNameLetter == 'M'){
+		if (firstNameLetter == 'M') {
 		   System.out.println("Your name starts with letter 'M'");
-		} else if (firstNameLetter == 'I'){
+		} else if (firstNameLetter == 'I') {
 		     System.out.println("Your name starts with letter 'I'");
 		} else {
 		     System.out.println("Your name starts with another letter");
 		} 
 
-		}
 	}
 }
+
 
 	
