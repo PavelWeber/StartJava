@@ -1,50 +1,43 @@
-public class ConditionalStatement
-
-{
+public class ConditionalStatement {
 	
-public static void main (String [] args)
+	public static void main (String [] args){
 
 
-{
+		int age = 33;
+		char sex = 'm';
+		float height = 1.83f;
+		char firstNameLetter = 'P';
 
 
-int age = 33;
-char sex = 'm';
-float height = 1.83f;
-char firstNameLetter = 'P';
+		if(age > 20) {
+		    System.out.println("You are adult");
+		}
 
+		if(sex=='m') {
+		    System.out.println("You are man");
 
-if(age > 20) {
-    System.out.println("You are adult");
-}
+		if(sex=='f') {
+		    System.out.println("You are woman");
+		}
 
-if(sex=='m') {
-    System.out.println("You are man");
+		if(height < 1.80) {
+		    System.out.println("You are short");
+		}  else {
+		    System.out.println("You are tall");
+		}
 
-if(sex=='f') {
-    System.out.println("You are woman");
-}
-
-if(height < 1.80) {
-    System.out.println("You are short");
-}  else {
-    System.out.println("You are tall");
-}
-
-if (firstNameLetter == 'M') {
-   System.out.println("Your name starts with letter 'M'");
-} else if (firstNameLetter == 'I') {
-     System.out.println("Your name starts with letter 'I'");
-} else {
-     System.out.println("Your name starts with another letter");
-} 
+		if (firstNameLetter == 'M') {
+		   System.out.println("Your name starts with letter 'M'");
+		} else if (firstNameLetter == 'I') {
+		     System.out.println("Your name starts with letter 'I'");
+		} else {
+		     System.out.println("Your name starts with another letter");
+		} 
 
 
 
-}
+		}
 
+		}
 
-
-}
-
-}
+		}
