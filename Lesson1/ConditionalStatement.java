@@ -16,7 +16,7 @@ public class ConditionalStatement {
 
 		if(!isMan) {
 		    System.out.println("You are woman");
-		}
+		  }
 
 		if(height < 1.80) {
 		    System.out.println("You are short");
