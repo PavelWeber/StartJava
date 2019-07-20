@@ -4,13 +4,13 @@ public class MyFirstGame {
         int humanNumber = 0;
 		
         while (humanNumber != computerNumber) {
-			if (humanNumber < computerNumber) {
-				System.out.println("Your figure is less than computer suggested");
-				humanNumber++;
-			} else if (humanNumber > computerNumber) {
-				System.out.println("Your figure is more than computer suggested");
-				humanNumber--;
-			} 
+		if (humanNumber < computerNumber) {
+		    System.out.println("Your figure is less than computer suggested");
+		    humanNumber++;
+		} else if (humanNumber > computerNumber) {
+		    System.out.println("Your figure is more than computer suggested");
+	            humanNumber--;
+		} 
         }        
         System.out.println("You won!");                   
     }
