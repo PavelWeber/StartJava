@@ -1,6 +1,6 @@
 public class ConditionalStatement {
 	
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		int age = 33;
 		boolean isMan = true;
 		float height = 1.83f;
