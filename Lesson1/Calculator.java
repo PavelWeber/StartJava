@@ -17,10 +17,10 @@ public class Calculator {
 			System.out.println(a % b);
 		} else if (sign == '^') {
 			int result = 1;
-				for(int i = 1; i <= b; i++) {
-					result *= a;			
-				}
-		System.out.println (result);
+			for(int i = 1; i <= b; i++) {
+				result *= a;			
+			}
+			System.out.println (result);
 		}
 	}
 }
