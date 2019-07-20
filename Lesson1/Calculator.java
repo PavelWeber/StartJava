@@ -13,7 +13,7 @@ public class Calculator {
 
 		else if (sign == '+') {
 			result = a + b;
-	    	System.out.println(result);
+			System.out.println(result);
 		}
 
 		else if (sign == '-'){
@@ -36,7 +36,7 @@ public class Calculator {
 				for(int i = 1; i <= b; i++) {
 					result *= a;			
 				}
-				System.out.println (result);
+			System.out.println (result);
 		}
 
 	}
