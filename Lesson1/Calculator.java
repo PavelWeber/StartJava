@@ -16,7 +16,7 @@ public class Calculator {
 			System.out.println(result);
 		}
 
-		else if (sign == '-'){
+		else if (sign == '-') {
 			result = a - b;
 			System.out.println(result);
 		}
@@ -38,7 +38,5 @@ public class Calculator {
 				}
 			System.out.println (result);
 		}
-
 	}
-
 }
