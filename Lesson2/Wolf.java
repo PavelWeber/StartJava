@@ -14,7 +14,7 @@ public class Wolf {
 	}
 
 	void run() {
-	System.out.println("Wolf runs");        
+		System.out.println("Wolf runs");        
 	}
 
 	void vow() {
