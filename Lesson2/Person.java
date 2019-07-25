@@ -1,17 +1,22 @@
 public class Person {
 	String sex = "man";
-	String name ="John";
+	String name = "John";
 	int height = 191;
-	int weight=89;
+	int weight = 89;
 
-	void go(){
+	void go() {
 	}
-	void sit(){
+
+	void sit() {
 	}
-	void run(){		
+
+	void run() {		
 	}
-	void talk(){		
+
+	void talk() {		
 	}
-	void learnJava(){		
+
+	void learnJava() {		
 	}
+
 }
