@@ -5,12 +5,15 @@ public class Person {
 	int height = 191;
 	int weight=89;
 
-	boolean 
-
-
-
-
-
-
+	void go(){
+	}
+	void sit(){
+	}
+	void run(){		
+	}
+	void talk(){		
+	}
+	void learnJava(){		
+	}
 
 }
