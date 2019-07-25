@@ -1,62 +1,27 @@
 public class Wolf {
-	private String sex = "man";
-	private String name = "Volk";
-	private int age = 5;
-	private String colour = "red";
-	public String getWolfSex() {
-		return sex;
-	}
 
-	public void setWolfSex(String sex) {
-		this.sex = sex;
-	}
+	String sex = "man";
+	String name =" Volk";
+	int age = 5;
+	String colour = "red";
 
-	public String getWolfName() {
-		return name;
-	}
-
-	public void setWolfName(String name) {
-		this.name = name;
-	}
-
-	public int getWolfAge() {
-		return age;
-	}
-
-	public void setWolfAge(int age) {
-		if(age > 8){
-			System.out.println("age is incorrect");
-		} else {
-			this.age = age;
-		}
-	}
-
-	public String getWolfColour() {
-		return colour;
-	}
-
-	public void setWolfColour(String colour) {
-		this.colour = colour;
-	}
-
-	public void go() {
+	void go() {
 		System.out.println("Wolf goes");
 	}
 
-	public void sit() {
+	void sit() {
 		System.out.println("Wolf sits");
 	}
 
-	public void run() {
-		System.out.println("Wolf runs");		
+	void run() {
+	System.out.println("Wolf runs");        
 	}
 
-	public void vow() {
-		System.out.println("Wolf vows");		
+	void vow() {
+		System.out.println("Wolf vows");      
 	}
 
-	public void hunt() {
-		System.out.println("Wolf hunts");		
+	void hunt() {
+		System.out.println("Wolf hunts");      
 	}
-
 }
