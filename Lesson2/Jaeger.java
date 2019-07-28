@@ -8,31 +8,31 @@ public class Jaeger {
 	private int strength;
 	private int armor;
 
-	public void setModelName(String modelName){
+	public void setModelName(String modelName) {
 		this.modelName = modelName;
 		}
 
-	public void setMark(String mark){
+	public void setMark(String mark) {
 		this.mark = mark;
 		}
 
-	public void setOrigin(String origin){
+	public void setOrigin(String origin) {
 		this.origin = origin;
 		}
 
-	public void setHeight(float height){
+	public void setHeight(float height) {
 		this.height = height;
 		}
 
-	public void setWeight(float weight){
+	public void setWeight(float weight) {
 		this.weight = weight;
 		}
 
-	public void setSpeed(int speed){
+	public void setSpeed(int speed) {
 		this.speed = speed;
 		}
 
-	public void setStrength(int strength){
+	public void setStrength(int strength) {
 		this.strength = strength;
 		}
 
