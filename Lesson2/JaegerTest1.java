@@ -1,4 +1,4 @@
-public class JaegerTest1 {
+public class JaegerTest {
 	public static void main(String[] args) {
 		Jaeger gipsy = new Jaeger();
 		gipsy.setModelName("Gipsy");
@@ -13,5 +13,20 @@ public class JaegerTest1 {
 		gipsy.move();
 		gipsy.scanKaiju();
 		gipsy.useVortexCannon();
+
+
+		Jaeger avenger = new Jaeger();
+		avenger.setModelName("Avenger");
+		avenger.setMark("Mark2");
+		avenger.setOrigin("Indonesia");
+		avenger.setHeight(102);
+		avenger.setWeight(2004);
+		avenger.setSpeed(6);
+		avenger.setStrength(8);
+		avenger.setArmor(2000);
+
+		avenger.move();
+		avenger.scanKaiju();
+		avenger.useVortexCannon();
 	}
 }
