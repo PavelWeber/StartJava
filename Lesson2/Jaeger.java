@@ -42,13 +42,13 @@ public class Jaeger {
 
 	public void move() {
 		System.out.println("Robot is moving");
-	}
+		}
 
 	public void scanKaiju() {
 		System.out.println("Robot is scanning");
-	}
+		}
 
 	public void useVortexCannon() {
 		System.out.println("Robot is shooting");
-	}
+		}
 }
