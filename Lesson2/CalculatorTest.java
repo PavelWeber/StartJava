@@ -3,9 +3,8 @@ public class CalculatorTest {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		String reply = "yes";
-	 	
-	 	if (reply == "yes") {
+		String reply = "yes";	 	
+	 	while (reply.equals("yes")) {
 			Calculator calculator = new Calculator();
 
 			System.out.println("Please input an integer ");
@@ -26,7 +25,7 @@ public class CalculatorTest {
 			do {
 				System.out.println("do you want to continue yes/no");
 				reply = scan.next();
-			} while ((reply!=("yes")) && (reply!=("no")));				 		
+			} while (!reply.equals("yes") && !reply.equals("no"));				 		
 	 	}		
 	}
 }
