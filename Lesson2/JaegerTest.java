@@ -14,7 +14,6 @@ public class JaegerTest {
 		gipsy.scanKaiju();
 		gipsy.useVortexCannon();
 
-
 		Jaeger avenger = new Jaeger();
 		avenger.setModelName("Avenger");
 		avenger.setMark("Mark2");

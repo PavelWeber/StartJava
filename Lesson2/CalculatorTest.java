@@ -2,20 +2,20 @@ import java.util.Scanner;
 public class CalculatorTest {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		Calculator calculator1 = new Calculator();
+		Calculator calculator = new Calculator();
 
 		System.out.println("Please input an integer ");
 		int a = scan.nextInt();
-		calculator1.setA(a);
+		calculator.setA(a);
 		System.out.println("Please input an operation sign ");
-		String sign = scan.next();
-		char sign1 = sign.charAt(0);
-		calculator1.setSign1(sign1);
+		String scanSign = scan.next();
+		char signOfOperation = scanSign.charAt(0);
+		calculator.setSign1(sign1);
 		System.out.print("Please input an integer ");
 		int b = scan.nextInt();
-		calculator1.setB(b);
+		calculator.setB(b);
 
-		calculator1.count();
+		calculator.calculate();
 	}
 }
 

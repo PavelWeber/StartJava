@@ -18,7 +18,7 @@ public class Calculator {
 		this.sign=sign;
 	}
 
-	public void count() {
+	public void calculate() {
 		switch (sign1) {
 			case '+':
 				System.out.println(a + b);
@@ -39,8 +39,12 @@ public class Calculator {
 				int result = 1;
 				for(int i = 1; i <= b; i++) {
 						result *= a;			
-					}
+				}
 				System.out.println(result);
-				break;}
+				break;
+			default:
+				System.out.println("No option programmed for your operation");
+				break;
+			}
 		}
 }
