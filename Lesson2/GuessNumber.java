@@ -6,17 +6,14 @@ public class CalculatorTest {
 		private int computerNumber;
 		private String name;
 		private int number;
-
-		public GuessNumber(int computerNumber) {
-			this.computerNumber = computerNumber;
-		}	
+		private String answer;
 
 		Scanner scan = new Scanner(System.in);
 		String answer = "yes";	
 
 	 	while (answer.equals("yes")) {
 			public void play() {
-			while (igrok1.number != computerNumber) {
+			while ((igrok1.guessNumber() || igrok2.guessNumber()) != computerNumber) {
 				System.out.println("Turn goes to player 2");
 			} if (igrok2.number!=computerNumber) {
 				System.out.println("Turn goes to player 1");
