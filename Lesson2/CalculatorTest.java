@@ -1,10 +1,9 @@
 import java.util.Scanner;
 public class CalculatorTest {
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
-		String reply = "yes";	 	
-	 	while (reply.equals("yes")) {
+		String answer = "yes";	 	
+	 	while (answer.equals("yes")) {
 			Calculator calculator = new Calculator();
 
 			System.out.println("Please input an integer ");
@@ -12,9 +11,8 @@ public class CalculatorTest {
 			calculator.setA(a);
 
 			System.out.println("Please input an operation sign ");
-			String input = scan.next();
-			char signOfOperation = input.charAt(0);
-			calculator.setSignOfOperation(signOfOperation);
+			char sign = scan.next().charAt(0);
+			calculator.setSign(sign);
 			
 			System.out.print("Please input an integer ");
 			int b = scan.nextInt();
@@ -24,8 +22,8 @@ public class CalculatorTest {
 			
 			do {
 				System.out.println("do you want to continue yes/no");
-				reply = scan.next();
-			} while (!reply.equals("yes") && !reply.equals("no"));				 		
+				answer = scan.next();
+			} while (!answer.equals("yes") && !answer.equals("no"));				 		
 	 	}		
 	}
 }

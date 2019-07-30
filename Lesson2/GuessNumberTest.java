@@ -3,21 +3,23 @@ import java.util.Scanner;
 
 public class GuessNumberTest {
 	public static void main(String[] args) {
-
 		GuessNumber computerNumber = new GuessNumber(Math.random());
 		Scanner scan = new Scanner(System.in);
-	
+
+		int maximum = 100.; // Максимальное число для диапазона от 0 до max
+		int rnd = rnd(maximum);	
+
+		Player igrok1 = new Player(name, number);
 		System.out.println("Insert first player's name");
-		String imya1=scan.nextLine();
-
+		String igrok1.name = scan.nextLine();
+		int igrok1.number = igrok1(maximum);
+		
+		Player igrok2 = new Player(name, number);
 		System.out.println("Insert second player's name");
-		String imya2 = scan.nextLine();
+		String igrok2.name = scan.nextLine();
+		int igrok2.number = igrok2(maximum);
 
-		int numer1 = Math.random();
-		int numer2 = Math.random();
-
-		Player igrok1 = new Player(imya1, numer1);
-		Player igrok2 = new Player(imya2, numer2);
 		}
+
 		igrok1.play();
 }
