@@ -43,6 +43,6 @@ public class Calculator {
 			default:
 				System.out.println("No option programmed for your operation");
 				break;
-				}
+		}
 	}
 }
