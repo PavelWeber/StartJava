@@ -1,38 +1,18 @@
 import java.lang.Math;
 import java.util.Scanner;
 
-public class CalculatorTest {
-	public static void main(String[] args) {
+public class GuessNumber {
+	
 		private int computerNumber;
 		private String name;
 		private int number;
 		private String answer;
 
 		Scanner scan = new Scanner(System.in);
-		String answer = "yes";	
+		String answer = "yes";
+		int computerNumber = (int)(Math.random()*101);
 
-	 	while (answer.equals("yes")) {
-			public void play() {
-			while ((igrok1.guessNumber() || igrok2.guessNumber()) != computerNumber) {
-				System.out.println("Turn goes to player 2");
-			} if (igrok2.number!=computerNumber) {
-				System.out.println("Turn goes to player 1");
-			} 
-			if(igrok1.number = computerNumber){
-				System.out.println("igrok1 wins");
-			}
-			else if{
-				System.out.println("igrok2 wins");
-			}
-		} 
-
-			
-			do {
-				System.out.println("do you want to continue yes/no");
-				answer = scan.next();
-			} while (!answer.equals("yes") && !answer.equals("no"));				 		
-	 	}		
-	}
+	 
 }
 
 

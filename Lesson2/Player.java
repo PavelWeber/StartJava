@@ -2,13 +2,16 @@ public class Player {
 		private int number;
 		private String name;
 
-		public Player( String name, int number) {
+		public Player( String name) {
 			this.name = name;
+		}
+
+		public void setNumber(int number) {
 			this.number = number;
 		}
 
-		public int guessNumber(int number){
-			return number = (int)(Math.random()*100);
-		}	
+		public int getNumber() {
+			return number;
+		}
 }
 
