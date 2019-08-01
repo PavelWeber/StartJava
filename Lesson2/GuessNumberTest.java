@@ -11,7 +11,7 @@ public class GuessNumberTest {
 		player1.name = scan.nextLine();				
 		Player player2 = new Player(name);
 		System.out.println("Insert second player's name");
-		player2.name = scan.nextInt();	
+		player2.name = scan.nextLine();	
 		String answer = "yes";
 
 		while (answer.equals("yes")) {
