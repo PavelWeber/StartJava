@@ -1,7 +1,6 @@
 public class Player {
 		private int number;
 		private String name;
-
 		public Player( String name) {
 			this.name = name;
 		}
@@ -14,4 +13,3 @@ public class Player {
 			return number;
 		}
 }
-

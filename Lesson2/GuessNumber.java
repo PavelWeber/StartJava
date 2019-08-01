@@ -1,18 +1,19 @@
-import java.lang.Math;
-import java.util.Scanner;
-
 public class GuessNumber {
-	
-		private int computerNumber;
-		private String name;
-		private int number;
-		private String answer;
-
-		Scanner scan = new Scanner(System.in);
-		String answer = "yes";
-		int computerNumber = (int)(Math.random()*101);
-
-	 
+		public void play() {
+		System.out.println("Insert first player's number");
+		player1.setNumber(scan.nextInt());
+			while (player1.getNumber() != computerNumber) {
+			System.out.println("Turn goes to player 2");				
+			System.out.println("Insert second player's number");
+			player2.setNumber(scan.nextInt());		
+			if (player2.getNumber() != computerNumber) {					
+					System.out.println("Turn goes to player 1");
+					}	
+					System.out.println("player wins");
+			}
+		}
 }
+
+
 
 
