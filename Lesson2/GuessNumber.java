@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class GuessNumber {
-
     private int computerNumber = (int)(Math.random() * 101);;
     private Player player1;
     private Player player2;
@@ -18,27 +17,46 @@ public class GuessNumber {
             System.out.println("Insert first player's number");
             player1.setNumber(scan.nextInt());
 
-            if(player1.getNumber() > 100 | player1.getNumber() < 0) {
-                System.out.println(player1.getName() + " have input number out of the interval. Game over");
-                break;
+            while(player1.getNumber() > 100 | player1.getNumber() < 0) {
+                System.out.println(player1.getName() + " have input number out of the interval. Please input number in interval of 0 - 100");
+                player1.setNumber(scan.nextInt());
             }
+            
             if (player1.getNumber() == computerNumber) {
                 System.out.println(player1.getName() + " wins");
                 break;
+            }
+
+            else if (player1.getNumber() < computerNumber) {
+                System.out.println(player1.getName() + " number is less than computerNumber");    
+            }
+
+            else {
+                System.out.println(player1.getName() + " number is more than computerNumber");              
             }
 
             System.out.println("Turn goes to " + player2.getName());
             System.out.println("Insert second player's number");
             player2.setNumber(scan.nextInt());
 
-            if(player2.getNumber() > 100 | player2.getNumber() < 0) {
-                System.out.println(player2.getName() + " have input number out of the interval. Game over");
-                break;
+            while(player2.getNumber() > 100 | player2.getNumber() < 0) {
+                System.out.println(player2.getName() + " have input number out of the interval. Please input number in interval of 0 - 100");
+                player2.setNumber(scan.nextInt());
             }
+
             if (player2.getNumber() == computerNumber) {
                 System.out.println(player2.getName() + " wins");
                 break;
             }
+
+            else if (player2.getNumber() < computerNumber) {
+                System.out.println(player1.getName() + " number is less than computerNumber");                
+            }
+
+            else {
+                System.out.println(player1.getName() + " number is more than computerNumber");               
+            }
+
             System.out.println("Turn goes to " + player1.getName());
         }
     }
