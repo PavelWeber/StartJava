@@ -13,7 +13,7 @@ public class GuessNumber {
     }
 
     public void play() {
-       for(int i=0; ;i++) {
+       while(true) {
             System.out.println("Insert first player's number");
             player1.setNumber(scan.nextInt());
 
