@@ -1,5 +1,8 @@
 package com.startjava.lesson_2_3.game;
 
+import com.startjava.lesson_2_3.game.GuessNumber;
+import com.startjava.lesson_2_3.game.Player;
+
 import java.util.Scanner;
 public class GuessNumberTest {
 	public static void main(String[] args) {

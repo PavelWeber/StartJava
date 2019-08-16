@@ -4,7 +4,7 @@ public class Calculator {
 	private int a;
 	private int b;
 	private char sign;
-	private int result;
+	private double result;
 
 	public void setA(int a) {
 		this.a = a;
@@ -21,25 +21,27 @@ public class Calculator {
 	public void calculate() {
 		switch (sign) {
 			case '+':
-				System.out.println("Result is " + (a + b));
+				result = Math.addExact(a,b);
+				System.out.println("Result is " + result);
 				break;
 			case '-':
-				System.out.println("Result is " + (a - b));
+				result = Math.subtractExact(a,b);
+				System.out.println("Result is " + result);
 				break;
 			case '*':
-				System.out.println("Result is " + (a * b));
+				result = Math.multiplyExact(a,b);
+				System.out.println("Result is " + result);
 				break;
 			case '/':
-				System.out.println("Result is " + (a / b));
+				result = Math.floorMod(a,b);
+				System.out.println("Result is " + result);
 				break;
 			case '%':
-				System.out.println("Result is " + (a % b));
+				result = Math.IEEEremainder(a,b);
+				System.out.println("Result is " + result);
 				break;
 			case '^':
-				result = 1;
-				for(int i = 1; i <= b; i++) {
-					result *= a;			
-				}
+				result = (int) Math.pow(a,b);
 				System.out.println("Result is " + result);
 				break;
 			default:

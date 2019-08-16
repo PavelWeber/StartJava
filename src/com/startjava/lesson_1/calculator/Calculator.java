@@ -1,4 +1,6 @@
 package com.startjava.lesson_1.calculator;
+import java.lang.Math;
+
 
 public class Calculator {
 	
@@ -6,23 +8,26 @@ public class Calculator {
 		int a = 3;
 		int b = 4;
 		char sign = '+';
+		double result;
 
 		if (sign == '/') {
-			System.out.println(a / b);
+			result = Math.floorDiv(a,b);
+			System.out.println(result);
 		} else if (sign == '+') {
-			System.out.println(a + b);
+			result = Math.addExact(a,b);
+			System.out.println(result);
 		} else if (sign == '-') {
-			System.out.println(a - b);
+			result = Math.subtractExact(a,b);
+			System.out.println(result);
 		} else if (sign == '*') {
-			System.out.println(a * b);
+			result = Math.multiplyExact(a,b);
+			System.out.println(result);
 		} else if (sign == '%') {
-			System.out.println(a % b);
+			result = Math.IEEEremainder(a,b);
+			System.out.println(result);
 		} else if (sign == '^') {
-			int result = 1;
-			for(int i = 1; i <= b; i++) {
-				result *= a;			
+			result = Math.pow(a,b);
+			System.out.println(result);
 			}
-			System.out.println (result);
-		}
 	}
 }
