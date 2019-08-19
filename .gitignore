@@ -1,5 +1,5 @@
 out
-.idea
+C:\Users\tkalipav\Desktop\startjava\.idea
 
 #class-files
 
@@ -8,3 +8,5 @@ out
 startjava.iml
 
 
+.idea\
+startjava.iml
