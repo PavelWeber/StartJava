@@ -1,7 +1,6 @@
 package com.startjava.lesson_1.calculator;
 import java.lang.Math;
 
-
 public class Calculator {
 	
 	public static void main(String[] args) {
@@ -11,23 +10,25 @@ public class Calculator {
 		double result;
 
 		if (sign == '/') {
-			result = Math.floorDiv(a,b);
+			result = a/b;
 			System.out.println(result);
 		} else if (sign == '+') {
-			result = Math.addExact(a,b);
+			result = a + b;
 			System.out.println(result);
 		} else if (sign == '-') {
-			result = Math.subtractExact(a,b);
+			result = a - b;
 			System.out.println(result);
 		} else if (sign == '*') {
-			result = Math.multiplyExact(a,b);
+			result = a * b;
 			System.out.println(result);
 		} else if (sign == '%') {
-			result = Math.IEEEremainder(a,b);
+			result = a & b;
 			System.out.println(result);
 		} else if (sign == '^') {
-			result = Math.pow(a,b);
-			System.out.println(result);
+			result = 0;
+			for(int i = 0; i < b; i++){
+				result = result*a;
+			}
 			}
 	}
 }

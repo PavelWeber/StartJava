@@ -21,28 +21,30 @@ public class Calculator {
 	public void calculate() {
 		switch (sign) {
 			case '+':
-				result = Math.addExact(a,b);
+				result = a + b;
 				System.out.println("Result is " + result);
 				break;
 			case '-':
-				result = Math.subtractExact(a,b);
+				result = a - b;
 				System.out.println("Result is " + result);
 				break;
 			case '*':
-				result = Math.multiplyExact(a,b);
+				result = a * b;
 				System.out.println("Result is " + result);
 				break;
 			case '/':
-				result = Math.floorMod(a,b);
+				result = a / b;
 				System.out.println("Result is " + result);
 				break;
 			case '%':
-				result = Math.IEEEremainder(a,b);
+				result = a % b;
 				System.out.println("Result is " + result);
 				break;
 			case '^':
-				result = (int) Math.pow(a,b);
-				System.out.println("Result is " + result);
+				result = 0;
+				for(int i = 0; i < b; i++){
+					result = result*a;
+				}
 				break;
 			default:
 				System.out.println("No option programmed for your operation");
