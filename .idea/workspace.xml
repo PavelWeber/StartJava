@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9002850-efd8-4cd2-a365-22dde451e7c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/startjava/lesson_4/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/startjava/lesson_4/calculator/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/startjava/lesson_1/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/startjava/lesson_1/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/startjava/lesson_2_3/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/startjava/lesson_2_3/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/startjava/lesson_2_3/calculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/startjava/lesson_2_3/calculator/CalculatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/startjava/lesson_2_3/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -62,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/startjava/lesson_4/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="1003">
               <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="57" />
               <folding>
                 <element signature="e#184#185#0" expanded="true" />
@@ -115,11 +110,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1090" />
-    <option name="y" value="80" />
-    <option name="width" value="570" />
-    <option name="height" value="923" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="436" />
+    <option name="y" value="32" />
+    <option name="width" value="228" />
+    <option name="height" value="369" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -204,15 +199,6 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="startjava" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="lesson_4" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="startjava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startjava" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="startjava" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lesson_4" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="calculator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -454,9 +440,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18511066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14712153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -465,12 +451,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23702951" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981783" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981783" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32981783" />
@@ -611,27 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/startjava/lesson_4/calculator/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="57" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/startjava/lesson_1/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -650,6 +615,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/startjava/lesson_4/calculator/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="57" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
