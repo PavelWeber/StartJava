@@ -1,7 +1,10 @@
 out
+.idea
 
 #class-files
 
 *.class
 *.iml
+startjava.iml
+
 
