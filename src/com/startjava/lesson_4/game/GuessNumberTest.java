@@ -1,4 +1,7 @@
-package com.startjava.lesson_2_3.game;
+package com.startjava.lesson_4.game;
+
+import com.startjava.lesson_2_3.game.GuessNumber;
+import com.startjava.lesson_2_3.game.Player;
 
 import java.util.Scanner;
 public class GuessNumberTest {
@@ -6,6 +9,7 @@ public class GuessNumberTest {
 		Scanner scan = new Scanner(System.in);
 		String answer = "yes";	 	
 	 	while (answer.equals("yes")) {
+				System.out.println("You have ten attemps");
 	        	System.out.println("Insert first player's name");
 		        Player player1 = new Player(scan.nextLine());
 		        System.out.println("Insert second player's name");

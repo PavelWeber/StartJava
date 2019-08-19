@@ -11,8 +11,7 @@ public class CalculatorTest {
 
             System.out.println("Please input equation is format 1 + 1, do not forget to leave blank spaces ");
 
-            calculator.fromScan = scan.nextLine();
-            calculator.parts = calculator.fromScan.split(" ", 3);
+            calculator.setUserInput(scan.nextLine());
             calculator.setNumber1(Integer.parseInt(calculator.parts[0]));
             calculator.setSign(calculator.parts[1]);
             calculator.setNumber2(Integer.parseInt(calculator.parts[2]));
