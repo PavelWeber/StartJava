@@ -21,7 +21,7 @@ public class CalculatorTest {
 
             do {
                 System.out.println("do you want to continue yes/no");
-                answer = scan.nextLine()git;
+                answer = scan.nextLine();
             } while (!answer.equals("yes") && !answer.equals("no"));
         }
     }
