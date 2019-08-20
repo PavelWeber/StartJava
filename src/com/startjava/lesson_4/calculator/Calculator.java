@@ -8,7 +8,7 @@ public class Calculator {
     private int number2;
     String[] parts;
 
-    public void setUserInput(String userInput){
+    public void setUserInput(String userInput) {
         this.userInput = userInput;
     }
 
@@ -33,7 +33,6 @@ public class Calculator {
         return sign;
     }
 
-
     public void setNumber2(int number2) {
         this.number2 = number2;
     }
@@ -42,9 +41,13 @@ public class Calculator {
         return number1;
     }
 
+    public void split(String userInput) {
+        parts = userInput.split(" ", 3);
+    }
+
+
     public void calculate() {
 
-        parts = userInput.split(" ", 3);
 
         switch (sign) {
             case "+":
