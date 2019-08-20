@@ -6,7 +6,7 @@ public class GuessNumberTest {
 		Scanner scan = new Scanner(System.in);
 		String answer = "yes";
 		while (answer.equals("yes")) {
-			System.out.println("You have tem attempts");
+			System.out.println("You have ten attempts");
 			System.out.println("Insert first player's name");
 			Player player1 = new Player(scan.nextLine());
 			System.out.println("Insert second player's name");

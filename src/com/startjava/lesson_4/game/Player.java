@@ -3,7 +3,8 @@ package com.startjava.lesson_4.game;
 public class Player {
 	private int number;
 	private String name;
-	private int[] playerInputs;
+	public int[] player1Numbers;
+	public int[] player2Numbers;
 		
 	public Player(String name) {
 		this.name = name;

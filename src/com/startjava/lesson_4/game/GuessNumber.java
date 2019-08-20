@@ -4,23 +4,26 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class GuessNumber {
-    private int computerNumber = (int)(Math.random() * 101);;
+    private int computerNumber = (int) (Math.random() * 10);
+    ;
     private Player player1;
     private Player player2;
     private Scanner scan = new Scanner(System.in);
 
-    public  GuessNumber(Player player1, Player player2){
+    public GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
     }
 
     public void play() {
-        for(int i = 1; i < 10; i++) {
+        for (int i = 0; i < 9; i++) {
+
             System.out.println("Insert first player's number");
-
             player1.setNumber(scan.nextInt());
+            player1.player1Numbers = new int[9];
+            player1.player1Numbers[i] = player1.getNumber();
 
-            while(player1.getNumber() > 100 | player1.getNumber() < 0){
+            while (player1.getNumber() > 100 | player1.getNumber() < 0) {
                 System.out.println(player1.getName() + " have input number out of the interval. Please input number in interval of 0 - 100");
                 player1.setNumber(scan.nextInt());
             }
@@ -35,11 +38,11 @@ public class GuessNumber {
             }
 
             System.out.println("Turn goes to " + player2.getName());
-            System.out.println("Insert second player's number");
 
+            System.out.println("Insert second player's number");
             player2.setNumber(scan.nextInt());
 
-            while(player2.getNumber() > 100 | player2.getNumber() < 0){
+            while (player2.getNumber() > 100 | player2.getNumber() < 0) {
                 System.out.println(player2.getName() + " have input number out of the interval. Please input number in interval of 0 - 100");
                 player2.setNumber(scan.nextInt());
             }
@@ -53,6 +56,17 @@ public class GuessNumber {
             }
 
             System.out.println("Turn goes to " + player1.getName());
+
         }
+
+        for (int j = 0; j < player1.player1Numbers.length ; j++) {
+            System.out.println(player1.player1Numbers[j]);
+        }
+
+        for (int k = 0; k < player2.player2Numbers.length ; k++) {
+            System.out.println(player1.player1Numbers[k]);
+        }
+
+
     }
 }
