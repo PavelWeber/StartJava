@@ -4,9 +4,7 @@ public class Calculator {
 
     private String[] mathExpression;
 
-
     public void calculate(String userInput) {
-
         mathExpression = userInput.split(" ", 3);
 
         switch (mathExpression[1]) {
