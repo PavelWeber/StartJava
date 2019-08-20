@@ -2,16 +2,6 @@ package com.startjava.lesson_4.calculator;
 
 public class Calculator {
 
-    private String userInput;
-
-    public void setUserInput(String userInput) {
-        this.userInput = userInput;
-    }
-
-    public String getUserInput() {
-        return userInput;
-    }
-
     private String[] mathExpression;
 
 

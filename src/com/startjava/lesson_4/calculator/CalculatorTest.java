@@ -8,9 +8,8 @@ public class CalculatorTest {
         String answer = "yes";
         while (answer.equals("yes")) {
             Calculator calculator = new Calculator();
-            System.out.println("Please input equation is format 1 + 1, do not forget to leave blank spaces ");
-            calculator.setUserInput(scan.nextLine());
-            calculator.calculate(calculator.getUserInput());
+            System.out.println("Please input expression is format 1 + 1, do not forget to leave blank spaces ");
+            calculator.calculate(scan.nextLine());
 
             do {
                 System.out.println("do you want to continue yes/no");
