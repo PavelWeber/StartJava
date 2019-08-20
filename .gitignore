@@ -2,7 +2,6 @@ out
 idea
 .idea
 
-
 *.class
 *.iml
 
