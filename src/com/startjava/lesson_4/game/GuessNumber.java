@@ -2,10 +2,10 @@ package com.startjava.lesson_4.game;
 
 import java.util.Scanner;
 import java.lang.Math;
+import java.util.Arrays;
 
 public class GuessNumber {
     private int computerNumber = (int) (Math.random() * 10);
-    ;
     private Player player1;
     private Player player2;
     private Scanner scan = new Scanner(System.in);
@@ -59,9 +59,7 @@ public class GuessNumber {
 
         }
 
-        for (int j = 0; j < player1.player1Numbers.length ; j++) {
-            System.out.println(player1.player1Numbers[j]);
-        }
+
 
         for (int k = 0; k < player2.player2Numbers.length ; k++) {
             System.out.println(player1.player1Numbers[k]);
