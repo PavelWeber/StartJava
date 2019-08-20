@@ -10,8 +10,7 @@ public class CalculatorTest {
             Calculator calculator = new Calculator();
             System.out.println("Please input equation is format 1 + 1, do not forget to leave blank spaces ");
             calculator.setUserInput(scan.nextLine());
-            calculator.split(calculator.getUserInput());
-            calculator.calculate();
+            calculator.calculate(calculator.getUserInput());
 
             do {
                 System.out.println("do you want to continue yes/no");
