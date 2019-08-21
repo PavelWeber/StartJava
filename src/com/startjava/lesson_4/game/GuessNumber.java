@@ -19,8 +19,6 @@ public class GuessNumber {
     }
 
     public void play() {
-        player1.player1Numbers = new int[10];
-        player2.player2Numbers = new int[10];
 
         for (int i = 1; i < 11; i++) {
 
@@ -77,13 +75,13 @@ public class GuessNumber {
             }
 
             if (i == 10) {
-                System.out.println(Arrays.toString(player1.player1Numbers) + " " + Arrays.toString(player2.player2Numbers));
+                System.out.println(Arrays.toString(player1.player1Numbers).replace('[', ' ').replace(']', ' ') + " " + Arrays.toString(player2.player2Numbers).replace('[', ' ').replace(']', ' '));
             }
 
         }
 
-        array1 = Arrays.copyOf(player1.player1Numbers,counter-1);
-        array2 = Arrays.copyOf(player2.player2Numbers,counter-1);
+        array1 = Arrays.copyOf(player1.player1Numbers, counter - 1);
+        array2 = Arrays.copyOf(player2.player2Numbers, counter - 1);
         Arrays.fill(array1, 0);
         Arrays.fill(array2, 0);
 
