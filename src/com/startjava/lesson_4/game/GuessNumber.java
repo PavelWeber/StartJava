@@ -5,7 +5,7 @@ import java.lang.Math;
 import java.util.Arrays;
 
 public class GuessNumber {
-    private int computerNumber = (int) (Math.random() * 10);
+    private int computerNumber = (int) (Math.random() * 101);
     private Player player1;
     private Player player2;
     private Scanner scan = new Scanner(System.in);
@@ -16,25 +16,30 @@ public class GuessNumber {
     }
 
     public void play() {
-        for (int i = 0; i < 9; i++) {
+        for (int i = 1; i < 11; i++) {
 
             System.out.println("Insert first player's number");
             player1.setNumber(scan.nextInt());
-            player1.player1Numbers = new int[9];
+            player1.player1Numbers = new int[10];
             player1.player1Numbers[i] = player1.getNumber();
 
             while (player1.getNumber() > 100 | player1.getNumber() < 0) {
                 System.out.println(player1.getName() + " have input number out of the interval. Please input number in interval of 0 - 100");
                 player1.setNumber(scan.nextInt());
+
             }
 
             if (player1.getNumber() == computerNumber) {
-                System.out.println(player1.getName() + " wins");
+                System.out.println(player1.getName() + " guessed number from attempt № " + i);
                 break;
             } else if (player1.getNumber() < computerNumber) {
                 System.out.println(player1.getName() + " number is less than computerNumber");
             } else {
                 System.out.println(player1.getName() + " number is more than computerNumber");
+            }
+
+            if (i == 10) {
+               System.out.println(player1.getName() + "attempts are off");
             }
 
             System.out.println("Turn goes to " + player2.getName());
@@ -47,12 +52,17 @@ public class GuessNumber {
                 player2.setNumber(scan.nextInt());
             }
             if (player2.getNumber() == computerNumber) {
-                System.out.println(player2.getName() + " wins");
+                System.out.println(player2.getName() + " guessed number from attempt № " + i);
                 break;
             } else if (player2.getNumber() < computerNumber) {
-                System.out.println(player1.getName() + " number is less than computerNumber");
+                System.out.println(player2.getName() + " number is less than computerNumber");
             } else {
-                System.out.println(player1.getName() + " number is more than computerNumber");
+                System.out.println(player2.getName() + " number is more than computerNumber");
+            }
+
+            if (i == 10) {
+                System.out.println(player2.getName() + "attempts are off");
+                break;
             }
 
             System.out.println("Turn goes to " + player1.getName());
@@ -60,11 +70,9 @@ public class GuessNumber {
         }
 
 
-
-        for (int k = 0; k < player2.player2Numbers.length ; k++) {
-            System.out.println(player1.player1Numbers[k]);
-        }
-
+    //    for (int k = 0; k < player2.player2Numbers.length; k++) {
+      //      System.out.println(player1.player1Numbers[k]);
+       // }
 
     }
 }
