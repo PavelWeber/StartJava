@@ -1,11 +1,14 @@
 package com.startjava.lesson_4.game;
 
+import java.util.Arrays;
+
 public class Player {
 	private int number;
 	private String name;
+
 	public int[] player1Numbers;
 	public int[] player2Numbers;
-		
+
 	public Player(String name) {
 		this.name = name;
 	}
@@ -21,4 +24,6 @@ public class Player {
 	public int getNumber() {
 		return number;
 	}
+
+
 }
