@@ -3,21 +3,20 @@ package com.startjava.lesson_4.game;
 import java.util.Arrays;
 
 public class Player {
-    private int number;
-    private String name;
-    private int[] playerNumbers;
-
-    public int[] getPlayerNumbers() {
-        return playerNumbers;
-    }
-
-    public void setPlayerNumbers(int[] playerNumbers) {
-        this.playerNumbers = playerNumbers;
-    }
 
     public Player(String name) {
         this.name = name;
-        playerNumbers = new int[10];
+        numbers = new int[10];
+    }
+
+    private int number;
+    private String name;
+    private int[] numbers;
+
+    public int[] getNumbers(Player player, int counter) {
+
+        numbers[counter] = getNumber();
+        return Arrays.copyOf(player.numbers, counter);
     }
 
     public String getName() {
@@ -32,20 +31,14 @@ public class Player {
         return number;
     }
 
-    public void copyArray(Player player, int counter) {
 
-        Arrays.copyOf(player.playerNumbers, counter);
+    public void cleanNumbers(Player player) {
 
-    }
-
-    public void cleanArray(Player player) {
-
-        Arrays.fill(player.playerNumbers, 0);
+        Arrays.fill(player.numbers, 0);
     }
 
     public void showArrays(Player player1, Player player2) {
-        System.out.println(Arrays.toString(player1.playerNumbers).replace('[', ' ').replace(']', ' ') + " " + Arrays.toString(player2.playerNumbers).replace('[', ' ').replace(']', ' '));
+        System.out.println(Arrays.toString(player1.numbers).replace('[', ' ').replace(']', ' ') + " " + Arrays.toString(player2.numbers).replace('[', ' ').replace(']', ' '));
     }
-
 
 }

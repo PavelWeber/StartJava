@@ -22,6 +22,7 @@ public class GuessNumber {
 
             counter = i;
 
+            playerInforming(player1);
             playerSettingNumber(i, player1);
             logAttemptsAreOff(i, player1);
             logOutOfInterval(player1);
@@ -29,6 +30,7 @@ public class GuessNumber {
             if (guessingNumber(i, player1)) break;
             changeTurns(player2);
 
+            playerInforming(player2);
             playerSettingNumber(i, player2);
             logOutOfInterval(player2);
             if (guessingNumber(i, player2)) break;
@@ -42,11 +44,7 @@ public class GuessNumber {
                 player1.showArrays(player1, player2);
             }
         }
-        player1.copyArray(player1, counter - 1);
-        player2.copyArray(player2, counter - 1);
-        player1.cleanArray(player1);
-        player2.cleanArray(player2);
-        player1.showArrays(player1,player2);
+
     }
 
     private void changeTurns(Player player) {
@@ -78,10 +76,14 @@ public class GuessNumber {
         }
     }
 
-    private void playerSettingNumber(int i, Player player) {
-        System.out.println("Insert first player's number");
+    private void playerInforming(Player player) {
+        System.out.println("Insert " + player.getName() + "'s number");
         player.setNumber(scan.nextInt());
-        player.getPlayerNumbers()[i - 1] = player.getNumber();
+    }
+
+    private void playerSettingNumber(int i, Player player) {
+
+        player.getNumbers(player, counter)[i - 1] = player.getNumber();
     }
 
 }
