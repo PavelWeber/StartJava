@@ -6,15 +6,14 @@ public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String answer = "yes";
+
         while (answer.equals("yes")) {
             System.out.println("You have ten attempts");
             System.out.println("Insert first player's name");
             Player player1 = new Player(scan.nextLine());
             System.out.println("Insert second player's name");
             Player player2 = new Player(scan.nextLine());
-            player1.player1Numbers = new int[10];
-            player2.player2Numbers = new int[10];
-            GuessNumber game = new GuessNumber(player1, player2);
+            GuessNumber game = new GuessNumber(player1, player2, 10);
             game.play();
 
             do {
