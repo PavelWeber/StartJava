@@ -83,7 +83,7 @@ public class GuessNumber {
 
     private void playerSettingNumber(int i, Player player) {
 
-        player.getNumbers(player, counter)[i - 1] = player.getNumber();
+        player.getNumbers(player, counter);
     }
 
 }

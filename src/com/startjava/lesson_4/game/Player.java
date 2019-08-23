@@ -15,7 +15,7 @@ public class Player {
 
     public int[] getNumbers(Player player, int counter) {
 
-        numbers[counter] = getNumber();
+        numbers[counter] = player.getNumber();
         return Arrays.copyOf(player.numbers, counter);
     }
 
