@@ -1,5 +1,6 @@
 package com.startjava.lesson_4.game;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -9,81 +10,58 @@ public class GuessNumber {
     private Player player1;
     private Player player2;
     private Scanner scan = new Scanner(System.in);
-    private int counter;
+    private int index;
 
-    public GuessNumber(Player player1, Player player2, int counter) {
+    public GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
-        this.counter = counter;
     }
 
     public void play() {
-        for (int i = 1; i < 11; i++) {
-
-            counter = i;
-
-            playerInforming(player1);
-            playerSettingNumber(i, player1);
-            logAttemptsAreOff(i, player1);
-            logOutOfInterval(player1);
-
-            if (guessingNumber(i, player1)) break;
-            changeTurns(player2);
-
-            playerInforming(player2);
-            playerSettingNumber(i, player2);
-            logOutOfInterval(player2);
-            if (guessingNumber(i, player2)) break;
-
-            if (i < 10) {
-                changeTurns(player1);
-            } else if (i == 10) {
-                logAttemptsAreOff(i, player2);
+        for (index = 1; index < 11; index++) {
+            inputNumber(player1);
+            if (index == 10) {
+                System.out.println(player1.getName() + " attempts are off");
             }
-            if (i == 10) {
-                player1.showArrays(player1, player2);
+            if (guessingNumber(index, player1)) break;
+            inputNumber(player2);
+            if (guessingNumber(index, player2)) break;
+            if (index == 10) {
+                System.out.println(player2.getName() + " attempts are off");
+                showArrays(player1, player2);
+                cleanNumbers();
             }
         }
 
     }
 
-    private void changeTurns(Player player) {
-        System.out.println("Turn goes to " + player.getName());
+    public void inputNumber(Player player) {
+        System.out.println("Insert " + player.getName() + "'s number");
+        player.setNumber(scan.nextInt(), index);
     }
 
-    private boolean guessingNumber(int i, Player player) {
+
+    private boolean guessingNumber(int index, Player player) {
         if (player.getNumber() == computerNumber) {
-            System.out.println(player.getName() + " guessed number from attempt № " + i);
+            System.out.println(player.getName() + " guessed number from attempt № " + index);
             return true;
         } else if (player.getNumber() < computerNumber) {
             System.out.println(player.getName() + " number is less than computerNumber");
+
         } else {
             System.out.println(player.getName() + " number is more than computerNumber");
         }
+        System.out.println("Turn goes to another player");
         return false;
     }
 
-    private void logOutOfInterval(Player player) {
-        while (player.getNumber() > 100 | player.getNumber() < 0) {
-            System.out.println(player.getName() + " have input number out of the interval. Please input number in interval of 0 - 100");
-            player.setNumber(scan.nextInt());
-        }
+    private void showArrays(Player player1, Player player2) {
+        System.out.println(Arrays.toString(player1.getNumbers(index)).replace('[', ' ').replace(']', ' ') + " " + Arrays.toString(player2.getNumbers(index)).replace('[', ' ').replace(']', ' '));
     }
 
-    private void logAttemptsAreOff(int i, Player player) {
-        if (i == 10) {
-            System.out.println(player.getName() + " attempts are off");
-        }
-    }
-
-    private void playerInforming(Player player) {
-        System.out.println("Insert " + player.getName() + "'s number");
-        player.setNumber(scan.nextInt());
-    }
-
-    private void playerSettingNumber(int i, Player player) {
-
-        player.getNumbers(player, counter);
+    public void cleanNumbers() {
+        Arrays.fill(player1.getNumbers(index), 0);
+        Arrays.fill(player2.getNumbers(index), 0);
     }
 
 }

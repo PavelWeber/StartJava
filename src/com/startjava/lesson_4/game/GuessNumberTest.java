@@ -13,11 +13,8 @@ public class GuessNumberTest {
             Player player1 = new Player(scan.nextLine());
             System.out.println("Insert second player's name");
             Player player2 = new Player(scan.nextLine());
-            GuessNumber game = new GuessNumber(player1, player2, 10);
+            GuessNumber game = new GuessNumber(player1, player2);
             game.play();
-            player1.showArrays(player1, player2);
-            player1.cleanNumbers(player1);
-            player2.cleanNumbers(player2);
 
             do {
                 System.out.println("do you want to continue yes/no");
