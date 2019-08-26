@@ -19,21 +19,25 @@ public class GuessNumber {
 
     public void play() {
         for (index = 1; index < 11; index++) {
-            inputNumber(player1);
             if (index == 10) {
                 System.out.println(player1.getName() + " attempts are off");
             }
-            if (guessingNumber(index, player1)) break;
-            inputNumber(player2);
-            if (guessingNumber(index, player2)) break;
+            inputNumber(player1);
+            System.out.println("Turn goes to another player");
+            if (guessingNumber(player1)) break;
             if (index == 10) {
                 System.out.println(player2.getName() + " attempts are off");
-                showArrays(player1, player2);
-                cleanNumbers();
             }
+            inputNumber(player2);
+            if(index < 10) {
+                System.out.println("Turn goes to another player");
+            }
+            if (guessingNumber(player2)) break;
         }
-
+        showArrays(player1, player2);
+        cleanNumbers();
     }
+
 
     public void inputNumber(Player player) {
         System.out.println("Insert " + player.getName() + "'s number");
@@ -41,17 +45,15 @@ public class GuessNumber {
     }
 
 
-    private boolean guessingNumber(int index, Player player) {
-        if (player.getNumber() == computerNumber) {
+    private boolean guessingNumber(Player player) {
+        if (player.getNumber(index) == computerNumber) {
             System.out.println(player.getName() + " guessed number from attempt № " + index);
             return true;
-        } else if (player.getNumber() < computerNumber) {
+        } else if (player.getNumber(index) < computerNumber) {
             System.out.println(player.getName() + " number is less than computerNumber");
-
         } else {
             System.out.println(player.getName() + " number is more than computerNumber");
         }
-        System.out.println("Turn goes to another player");
         return false;
     }
 
