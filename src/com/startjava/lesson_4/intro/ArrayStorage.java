@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class ArrayStorage {
 
-    private int counter = 0;
+    private int i = 0;
 
     Resume[] storage = new Resume[10];
 
@@ -17,8 +17,8 @@ public class ArrayStorage {
     }
 
     void save(Resume r) {
-        storage[counter] = r;
-        counter++;
+        storage[i] = r;
+        i++;
     }
 
     Resume get(String uuid) {
