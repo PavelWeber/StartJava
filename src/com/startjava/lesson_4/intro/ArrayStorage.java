@@ -22,25 +22,26 @@ public class ArrayStorage {
     }
 
     Resume get(String uuid) {
-            for (Resume r: storage) {
-                if ((r.uuid).equals(uuid)) {
-                    return r;
-                }
+        for (Resume r : storage) {
+            if ((r.uuid).equals(uuid)) {
+                return r;
             }
-       return null;
+        }
+        return null;
     }
 
 
     void delete(String uuid) {
-        for (int i = 0; i < storage.length; i++){
+        for (int i = 0; i < storage.length; i++) {
             if ((storage[i].uuid).equals(uuid)) {
                 (storage[i].uuid).equals(null);
-                for (int j = i+1; j < storage.length; j++) {
-                    storage[i] = storage[j-1];
+                for (int j = i + 1; j < storage.length; j++) {
+                    storage[i] = storage[j - 1];
                 }
             }
         }
     }
+
     /**
      * @return array, contains only Resumes in storage (without null)
      */
