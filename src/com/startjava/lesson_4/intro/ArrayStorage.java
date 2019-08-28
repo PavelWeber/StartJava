@@ -16,8 +16,8 @@ public class ArrayStorage {
         Arrays.fill(storage, null);
     }
 
-    void save(Resume r) {
-        storage[i] = r;
+    void save(Resume uuid) {
+        storage[i] = uuid;
         i++;
     }
 
